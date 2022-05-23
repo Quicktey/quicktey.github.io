@@ -1,7 +1,9 @@
-﻿body {
+body {
     background-image: url("img/galactic-crystal-wallpaper-modified.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 html {
@@ -9,13 +11,14 @@ html {
 }
 
 img {
+    margin: 50px;
     border-radius: 10px;
     width: 150px;
     transition: transform .5s;
 }
 
 img:hover {
-    transform: scale(5);
+    transform: scale(2);
 }
 
 a{
@@ -26,6 +29,19 @@ a{
 a:hover{
     color: lightgray;
     text-decoration: none;
+}
+
+table{
+    text-align: center;
+}
+
+table.center {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+td{
+    width: 50%;
 }
 
 .bg-box {
