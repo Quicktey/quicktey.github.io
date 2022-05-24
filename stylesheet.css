@@ -1,3 +1,8 @@
+﻿html {
+    scroll-behavior: smooth;
+}
+
+/* bg styling */
 body {
     background-image: url("img/galactic-crystal-wallpaper-modified.jpg");
     background-attachment: fixed;
@@ -6,73 +11,59 @@ body {
     margin-bottom: 100px;
 }
 
-@media screen and (min-width:768px) {
-    body{
-        background-image: url("img/galactic-crystal-wallpaper-modified.jpg");
-        background-size: cover;
-    }
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
+/* img styling */
 img {
     margin: 50px;
     border-radius: 10px;
     width: 150px;
     transition: transform .5s;
 }
-
 img:hover {
     transform: scale(2);
 }
 
+ /* pop styling */
+.zoom {
+    transition: transform 0.2s; /* from W3Schools */
+}
+.zoom:hover {
+    transform: scale(1.05); /* from W3Schools */
+}
+
+/* link styling */
 a{
     color: white;
     text-decoration: none;
 }
-
 a:hover{
     color: lightgray;
     text-decoration: none;
 }
 
-table{
-    text-align: center;
-}
-
-table.center {
-    margin-left:auto;
-    margin-right:auto;
-}
-
-td{
-    width: 50%;
-}
-
-.bg-box {
+/* div canvas styling */
+.big-canvas-style {
     background-color: rgb(21, 21, 21);
     border-radius: 10px;
 }
-
-.zoom {
-    transition: transform 0.2s; /*Von W3Schools*/
-}
-
-.zoom:hover {
-    transform: scale(1.05); /*Von W3Schools*/
-}
-
-.bg-blurry {
-    background-color: rgba(21, 21, 21, 0.5);
-    /*backdrop-filter: blur(10px);*/ /*Von Herr Schneider*/
-}
-
 .little-canvas-style {
     border-radius: 10px;
 }
-
-.text{
-    position: relative;
+.bg-blurry {
+    background-color: rgba(21, 21, 21, 0.5);
+    /*backdrop-filter: blur(10px);*/ /* Von Herr Schneider */
 }
+
+/* table styling */
+table{
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+td{
+    width: 50%;
+}
+/*
+.bottom-line{
+    border-bottom: 1px solid gray;
+}
+*/
