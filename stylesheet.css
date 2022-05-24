@@ -10,6 +10,13 @@ body {
     margin-top: 50px;
     margin-bottom: 100px;
 }
+@media (max-width: 767px) {
+#ci-hero-11 .widget-wrap , #ci-hero-12 .widget-wrap {
+
+    background-attachment: initial;
+
+}
+}
 
 /* img styling */
 img {
