@@ -12,8 +12,16 @@ body {
     margin-bottom: 100px;
 }
 @media (max-width: 767px) {
-    body {
-        background-attachment: initial;
+    html::before { /* from https://julia-vicentini.de/blog/background-attachment-fixed-ios-workaround/ */
+        content: ' ';
+        display: block;
+        background-image: url("img/galactic-crystal-wallpaper-modified.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 100vh; width: 100vw;
+        top: 0; bottom: 0; left: 0; right: 0;
+        position: fixed;
+        z-index: -10;
     }
 }
 
