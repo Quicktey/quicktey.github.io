@@ -1,5 +1,6 @@
 ﻿html {
     scroll-behavior: smooth;
+    width: 100vw;
 }
 
 /* bg styling */
@@ -11,11 +12,9 @@ body {
     margin-bottom: 100px;
 }
 @media (max-width: 767px) {
-#ci-hero-11 .widget-wrap , #ci-hero-12 .widget-wrap {
-
-    background-attachment: initial;
-
-}
+    body {
+        background-attachment: initial;
+    }
 }
 
 /* img styling */
