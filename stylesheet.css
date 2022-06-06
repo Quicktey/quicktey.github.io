@@ -3,11 +3,22 @@
 }
 
 /* bg styling */
-body {
+html::before { /* from https://julia-vicentini.de/blog/background-attachment-fixed-ios-workaround/ */
+    content: ' ';
+    display: block;
     background-image: url("img/galactic-crystal-wallpaper-modified.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    margin-top: 50px;
+    background-position: center;
+    background-size: cover;
+    height: 100vh; width: 100vw;
+    top: 0; bottom: 0; left: 0; right: 0;
+    position: fixed;
+    z-index: -10;
+}
+
+/* body styling*/
+body {
+    font-family: 'Comfortaa', cursive;
+    margin-top: 100px;
     margin-bottom: 100px;
 }
 
@@ -16,14 +27,12 @@ body {
     font-size: 150px;
 }
 #name-undertitle{
-    color: darkgrey;
+    color: rgb(21, 21, 21);
 }
 h1{
-    font-family: "Calibri Light";
     font-size: 100px;
 }
 h2{
-    font-family: "Calibri Light";
     font-size: 50px;
 }
 
@@ -97,32 +106,32 @@ td{
 */
 
 /* mobile adjustments */
-@media (max-width: 767px) {
-    html::before { /* from https://julia-vicentini.de/blog/background-attachment-fixed-ios-workaround/ */
-        content: ' ';
-        display: block;
-        background-image: url("img/galactic-crystal-wallpaper-modified.jpg");
-        background-position: center;
-        background-size: cover;
-        height: 100vh; width: 100vw;
-        top: 0; bottom: 0; left: 0; right: 0;
-        position: fixed;
-        z-index: -10;
-    }
+@media (max-width: 1200px) {
     #name{
         font-size: 100px;
     }
     #name-undertitle{
-        color: darkgrey;
-        font-size: 35px;
+        font-size: 50px;
     }
     h1{
-        font-family: "Calibri Light";
-        font-size: 65px;
+        font-size: 60px;
     }
     h2{
-        font-family: "Calibri Light";
+        font-size: 60px;
+    }
+}
+@media (max-width: 767px) {
+    #name{
+        font-size: 70px;
+    }
+    #name-undertitle{
+        font-size: 30px;
+    }
+    h1{
         font-size: 50px;
+    }
+    h2{
+        font-size: 35px;
     }
     .little-canvas-style{
         margin-right: 30px;
