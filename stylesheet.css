@@ -87,7 +87,7 @@ a:hover{
 }
 .bg-blurry {
     background-color: rgba(21, 21, 21, 0.5);
-    backdrop-filter: blur(10px); /* Von Herr Schneider */
+    /* backdrop-filter: blur(10px); */ /* Von Herr Schneider */
 }
 
 /* table styling */
