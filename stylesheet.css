@@ -67,32 +67,22 @@ img:hover {
 }
 
 /* link styling */
-a:link {
-    color: rgb(0, 217, 255);
-    text-decoration: none;
-}
-a:visited {
-    color: rgb(99, 99, 99);
-    text-decoration: none;
-}
-a:hover {
-    color: rgb(0, 255, 242);
-    text-decoration: none;
-}
-a:active {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-/*
 a{
-    color: white;
+    color: white !important;
     text-decoration: none;
 }
 a:hover{
-    color: lightgray;
+    color: lightgray !important;
     text-decoration: none;
 }
-*/
+a:active {
+    color: rgb(255, 255, 255) !important;
+    text-decoration: none;
+}
+.link-color {
+    color: rgb(0, 217, 255) !important;
+    text-decoration: none;
+}
 
 /* div canvas styling */
 .big-canvas-style {
